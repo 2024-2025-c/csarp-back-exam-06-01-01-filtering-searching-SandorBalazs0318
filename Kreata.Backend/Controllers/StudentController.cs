@@ -36,5 +36,7 @@ namespace Kreata.Backend.Controllers
         {
             return Ok(await _studentRepo.GetNumberOfStudentByYearAndMonthQuery(year, month));
         }
+
+        //Szűrjük a diákokat névrészlet, születési éb vagy hónap vagy nem szerint
     }
 }
